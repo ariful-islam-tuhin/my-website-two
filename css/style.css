@@ -1,0 +1,753 @@
+/* == common css design start== */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+
+.container{
+    width: 1150px;
+    margin: auto;
+    overflow: hidden;
+    /* background-color: red;   */ 
+   
+}
+
+/* == common css design end here== */
+
+
+
+/* ====== practice have no need of templet======*/
+
+.text-shadow{
+    text-shadow: 2px 3px red;
+    overflow: hidden;
+}
+.flex-container{
+    /* background-color: rgb(224, 72, 72); */
+    display:flex;
+    /* flex-wrap: wrap;
+    flex-direction: row;
+    flex-direction: colum;
+    flex-direction: row-reverse;
+    flex-direction: row-reverse; */
+    flex-flow: wrap row;
+    justify-content: center;
+    /* justify-content: start;
+    justify-content: end; */
+    /* justify-content: space-between;
+    justify-content: space-around; */
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;  
+}
+.flex-container > div{
+    background-color: rgb(187, 182, 182);
+    color:white;
+    padding:20px;
+   
+    font-size: 40px;
+    
+    align-content: center;
+}
+.baner-div{
+    background-image: url(banner2.jpg);
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+}
+/* ======================practice end==================== */
+
+    /*****----------------------------------------------------
+       Here start a new templet design code of css
+    ----------------------------------------------------*****/
+
+.flex-navbar{
+    display: flex;
+    justify-content: space-between;  
+    color:rgb(165, 14, 14);
+    background-color: rgb(0, 0, 0);    
+    padding:6px 100px 6px 100px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------templet two--dropdown menu-------------------------- */
+                    /* .divone{
+                        display: flex;
+                        justify-content: space-between;
+                        font-family: Arial, Helvetica, sans-serif;
+                    } */
+                    .navbar{
+                        background-color: #e7562a;
+                        text-align:center;
+                        padding:20px;
+                        font-family: Arial, Helvetica, sans-serif;
+                      
+                     
+                        
+                    }
+                   
+                    .navbar a {
+                        text-decoration:none;
+                        font-size:1.2rem;
+                         color:rgb(255, 255, 255); 
+                        padding-right:10px;
+                        cursor: pointer;
+                    }
+                    .navbar a:hover{color: black;}
+                    .dropdown-container{
+                        display:inline;
+                        position: relative;
+                    }
+                    .dropdown-content a {
+
+                        display: block;
+                        color:rgb(3, 3, 3);
+                        border-bottom:3px solid black;
+                        margin: 5px;
+                    }
+                    
+                    .dropdown-content{
+                        position:absolute;
+                        top: 35px;
+                        right:0px;
+                        left:0px;                       
+                        background-color:#3ae72a; 
+                        text-align: left;
+                        min-width: 100px;
+                         display:none;    
+                        
+                    }
+                    .dropdown-container:hover .dropdown-content  {
+                        display:block;
+                        color:black;
+                        
+                       
+                    }
+                    .dropdown-container:hover .dropdown-content a {
+                        background-color: rgb(12, 15, 165);
+
+                    }
+                    .dropdown-content:hover a {
+                        background-color: rgb(240, 37, 37);
+                        color:rgb(0, 16, 104);
+                      
+                        
+                    } 
+                  
+
+/* -------------------------------------------------------------------- */
+                   .flex-containertwo{
+                    background-color: rgb(255, 255, 255);
+                    display:flex;
+                    /* flex-wrap: wrap;
+                    flex-direction: row;
+                    flex-direction: colum;
+                    flex-direction: row-reverse;
+                    flex-direction: row-reverse; */
+                    flex-flow: wrap row;
+                    justify-content: center;
+                    /* justify-content: start;
+                    justify-content: end; */
+                     /* justify-content: space-between;
+                     justify-content: space-around; */
+                     height: 60px;
+                     align-items: center;
+                     justify-content: space-around;
+                     font-family: Arial, Helvetica, sans-serif;
+                
+                  
+                }
+                
+                
+                .flex-containertwo> div{
+                    background-color: rgb(255, 255, 255);
+                    color:rgb(8, 8, 8);
+                    padding:10px;
+                   font-family: Arial, Helvetica, sans-serif;
+                    font-size: 30px;
+                    
+                    align-content: center;
+                
+                
+                }
+                .search-containertwo form input{
+                    width: 500px; height: 40px;
+                    border-color: rgb(219, 91, 45);
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                
+                   
+ /* ----------------------------------------------------------------- */
+ /* ----------------------------------------------------------------- */
+
+
+  /* ---------------------------------------------------------- */
+  /* ---------------------------------------------------------- */
+  .container-aria{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-around;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(238, 235, 235, 0.911);  
+  }
+  .divtwo{
+      /* width: 400px; */
+      height: 500px; 
+      background-image:url(image/slider-2.jpg);
+     background-size: cover;
+      position: relative;
+      flex-basis: 600px;
+     
+  }
+  .textaria{
+    /* width: 300px; */
+    flex-basis: 300px;
+    height: 300px;
+   color:white;
+   font-size: 2rem;background-color: red;
+    position: absolute;
+    align-items: center;
+    justify-content:center;
+    margin: 100px 100px;
+    padding-top: 50px;
+    opacity:.4;
+    box-sizing: border-box;
+}
+.textaria:active{
+    background-color: rgba(228, 52, 52, 0.554); 
+}
+/* .divtwo :hover.textaria{
+    opacity: 0.8;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+} */
+.divone{
+    width: 290px;
+    height: 500px;
+    
+    color: rgb(2, 2, 2);
+    background-color: rgb(255, 254, 254);  
+    align-items:center;
+    justify-content:center;
+    display:inline-block; 
+}
+
+.divone i{
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    color: #e7562a;
+}
+.divthree{
+   flex-basis: 290px;
+    height: 500px;
+    background-color: red;
+   
+     /* background-color: rgba(228, 52, 52, 0.554);  */
+   
+   
+}
+ .pera{
+    
+    flex-basis: 290px;
+        height: 250px;
+        color: rgb(12, 12, 12);
+        /* background-color: brown; */
+        padding-top: 65px;
+        text-align: center;
+       /* overflow: hidden; */
+        justify-content:center;
+         /* margin: 50px 50px;  */
+        opacity: 0;
+      padding-top: 110px;
+      box-sizing: border-box;
+}
+.divthree-up{
+    flex-basis: 290px;
+    height: 250px;   
+    background-image:url(image/category-5.jpg);
+    background-size: 100% 100%;
+    opacity: 1;
+    position: relative; 
+    box-sizing: border-box;
+}
+
+.divthree-up :hover.pera{
+    opacity:0.6;
+    transition: .8s;
+    color: rgb(248, 248, 248);
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 7, 7, 0.815); 
+}
+.divthree-down{
+    flex-basis: 290px;
+    height: 250px;
+    background-size: 100% 100%;
+    background-image:url(image/category-4.jpg);
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.divthree-down :hover.pera{
+    opacity:0.6;
+    transition: .8s;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(255, 7, 7, 0.815); 
+    box-sizing: border-box;
+}
+
+
+    /* =======================================================
+
+    =========================================================== */
+    .container-aria-two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(243, 13, 63, 0.233);  
+    }
+    .container-aria-two .logo-one{
+        /* background-color: rgb(255, 42, 5);  */        
+        padding: 20px 0px;
+    }
+    .container-aria-two .logo-one :hover{
+      color:white;
+      background-color: rgba(255, 0, 0, 0.37);
+    }
+
+
+    /*service twoo start here  ========================================
+
+    =============================================================== */
+
+    .service-twoo{
+
+        background:rgb(255, 255, 255);
+        padding: 40px 0px;
+    }
+    .flex-container-twoo{
+     
+      background: rgb(255, 255, 255);   
+    
+    }
+    
+     .sboxwraper-twoo{
+        /* overflow: hidden;  */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+
+         
+      
+    }
+    
+    
+    .singlebox-twoo{
+               
+        background-color:  rgb(255, 255, 255);
+        
+        cursor: pointer;
+        width: 300px;
+       
+        
+       
+    }
+    
+    
+    .sbox-title h2{
+      
+         font-family: Arial, Helvetica, sans-serif; 
+           
+        /* text-align: center; */
+        /* font-size: 20px; */
+        /* width: 330px;       
+        line-height: 25px;   */
+        text-transform: uppercase; 
+        
+         /* margin:0px 0px; */
+        font-weight: 900;  
+    }
+    
+    .sbox-title h2:hover{
+      color:rgb(241, 171, 58);
+    }
+    
+    .sbox-icon{
+         color:rgb(241, 171, 58);
+        /* text-align: center;
+        font-size: 50px;
+        padding: 15px 0px;
+        margin-top: 40px;  */ 
+    }
+    
+    .sbox-icon:hover{
+        color:rgba(209, 10, 10, 0.938);
+    }
+    
+    
+    /* .sbox-dece{
+         text-align: center;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-weight: 600; 
+        padding: 10px 0px;      
+    }
+     */
+    .sbox-dece:hover{
+        color:rgb(243, 228, 22);
+    
+    }
+   
+   
+     /* service twoo end here============================================= */
+
+   
+
+/* next now--------------------------------------
+--------------------------------------------------------- */
+.container-now-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.container-now{
+    position: relative;
+    box-sizing: border-box;
+    width: 280px;
+    height: 530px; 
+ 
+ 
+    /* width: 50%; */
+   
+} 
+.img-now{
+    opacity:.9;
+    display: block;
+    width: 280px;
+    height: 530px;   
+    transition: 0.5s ease;
+    backface-visibility: hidden; 
+  
+    
+}
+.middle-now{
+     transition: 0.5s ease;
+     opacity: 0;
+     position: absolute;
+     width: 280px; 
+     height: 530px; 
+     /* top: 50%;
+     left: 50%; */
+     background-color: red;
+    transform: translate(-0%, -100%); 
+     text-align: center;
+  
+}
+
+
+.text-now{
+    /* background-color: #d6131d; */
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    padding: 216px 30px; 
+    width: 280px; 
+    height: 530px; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+   
+    
+}
+.container-now :hover.middle-now{
+opacity: .7;
+}
+
+.container-now :hover.text-now{
+ color:white;
+}
+/* next end here=============================*/
+
+
+
+
+
+/* ================have to see next time start here =================== */
+
+/* .divthreee{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(228, 52, 52, 0.554); 
+  overflow: hidden;
+   
+}
+ .peraa{
+    
+        width: 400px;
+        height: 150px;
+        color: rgb(12, 12, 12);
+         background-color: brown; 
+        padding-top: 65px;
+        text-align: center;
+       
+        justify-content:center; */
+         /* margin: 50px 50px;  */
+        /* opacity: 0; */
+        
+/* }
+.divthreee-up {
+    width: 400px;
+    height: 150px;
+    background-color: rgba(221, 130, 130, 0.554); 
+    background-image:url(category-6.jpg);
+    position: relative;
+    
+}
+.divthreee-down{
+    width: 400px;
+    height: 150px;
+    background-color: rgba(221, 130, 130, 0.554); 
+    background-image:url(category-7.jpg);
+    position: relative;
+    
+}
+
+.divthreee-up :hover.peraa{
+    opacity:0.6;
+    transition: .8s;
+    color: white;
+    font-size: 1.2rem;
+}
+.divthreee-down :hover.peraa{
+    opacity:0.6;
+    transition: .8s;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+ */
+
+/* ===============have to see next time================================ */
+
+
+.templet-heading-two{
+    display: flex;
+    background-color: rgb(235, 65, 13);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 90px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.templet-heading-two :hover {
+    color:black;
+}
+/* anothe heading ================================================ */
+.another-heading{
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    justify-content: space-between;
+    padding:25px 90px 25px 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.fontawasome-arrow:{
+    background-color:yellow;
+}
+.fontawasome-arrow :hover{
+  
+    background-color: #ff6f61;
+  
+
+} 
+
+/* singlebox-new templet============================================== */
+
+.singlebox-new-templet-wraper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: rgb(243, 246, 255);
+    background-color: rgb(15, 52, 163);
+    box-sizing: border-box;
+    overflow: hidden;
+  
+
+}
+    .singlebox-new-templet{
+        flex-basis: 300px;
+        height: 500px;
+        margin: 10px;
+        background-color:rgb(226, 226, 226);
+        overflow: hidden;
+        box-sizing:border-box;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+      
+        }
+        /* .singlebox-new-templet img{
+            overflow: hidden;
+            box-sizing: border-box;
+            size: cover;
+        } */
+   
+.social-icon{
+    text-align: center;
+background-color: black;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+  
+}
+
+
+.hovericon-on-img{
+    text-align: center;
+    color:rgb(233, 39, 39);   
+    position: absolute;
+    margin-top: -400px; 
+  
+     opacity: .1; 
+    background-color: rgba(255, 0, 0, 0.959);
+    padding-top:250px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  
+}
+    
+.hovericon-on-img i{
+    text-align: center;
+    margin:2px;
+    font-size: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+  
+    
+}
+
+
+.singlebox-new-templet :hover.hovericon-on-img{
+opacity: .6;
+transition: .8s;
+}
+.singlebox-new-templet :hover.hovericon-on-img i{
+    opacity: .9;
+    transition: 2s;
+    color:white;
+    }
+    .button-below-imge{
+        text-align: center;
+        padding: 40px 0px;
+        margin-top:-10px;
+        font-size: 30px;
+        background-color: rgb(12, 12, 12);
+     
+    }
+ /* ============================================================ */
+
+.subcribe-our-news{
+    display: flex;
+    justify-content: space-between;
+    padding:30px 90px;
+    background-color: #ff6f61;
+    color: white;
+}
+.text-email{
+   
+}
+
+
+/* ================================================================
+=============================================================== */
+.imge-and-heading{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(211, 211, 207);
+    display: flex;
+    padding:20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.img-fast{
+    
+padding-right: 20px;
+}
+.heading-fast{
+   text-align: center;
+}
+
+.imge-and-heading-two{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(209, 209, 205);
+    display: flex;
+    padding:20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.img-last{
+    
+padding-right: 20px;
+}
+.heading-last{
+   text-align: center;
+}
+.img-and-heading-oneandtwo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.img-and-heading-oneandtwo :hover{
+    background-color: white;
+}
+/* ========================================================
+============================================================ */
+.templet-two-footer{
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.templet-two-singlediv{
+    flex-basis: 300px;
+    height: 150px;
+    background-color: rgba(22, 6, 245, 0.466);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px;
+  
+  
+}
+/* .templet-two-footer-wraper{
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+} */
+
